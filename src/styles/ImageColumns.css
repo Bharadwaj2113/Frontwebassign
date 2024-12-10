@@ -1,0 +1,67 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 700px; /* Adjust based on your design */
+  display: flex; /* For two columns */
+  gap: 20px; /* Space between the columns */
+  padding-left: 80px; /* Align container to the left */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.image-column {
+  flex: 0 0 auto; /* Prevent shrinking/growing */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between images in a column */
+  position: relative; /* Needed for animations */
+  width: 247px; /* Match the image width */
+}
+
+.image {
+  width: 247px;
+  height: 355px;
+  border-radius: 16px;
+  overflow: hidden; /* Ensure the image fits inside the rounded container */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container properly */
+}
+
+.image:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Animation for Column 1: Move top-to-bottom */
+.column-1 .image {
+  animation: moveDown 5s linear infinite;
+}
+
+/* Animation for Column 2: Move bottom-to-top */
+.column-2 .image {
+  animation: moveUp 5s linear infinite;
+}
+
+/* Move Down Animation */
+@keyframes moveDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Move Up Animation */
+@keyframes moveUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

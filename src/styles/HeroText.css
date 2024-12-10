@@ -1,0 +1,107 @@
+.hero-container {
+  position: relative; 
+}
+
+.hero-text {
+  position: absolute;
+  width: 599px; /* Added width */
+  height: 104px; /* Added height */
+  left: 650px;
+  top: 214px;
+  font-family: 'Inter', sans-serif; 
+}
+
+.hero-title {
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px; /* Adjusted line-height */
+  letter-spacing: -0.02em;
+  color: #000000; /* Added color */
+  margin: 0; /* You might want to keep this for spacing */
+}
+
+.gradient-text {
+  background: linear-gradient(93.31deg, #1173B3 -34.01%, #0CB9B3 69.91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+.hero-subtitle {
+  width: 630px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #707070;
+  margin-top: 16px;
+}
+
+.search-bar {
+  position: absolute;
+  left: 120px; /* Adjust to match the image */
+  top: 464px; /* Adjust to match the image */
+  width: 1080px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 60px;
+  padding: 0 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.input-container .icon {
+  font-size: 18px;
+  color: #707070;
+  margin-right: 8px;
+}
+
+.input-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+}
+
+.find-now {
+  width: 20%;
+  height: 60px;
+  background: linear-gradient(93.31deg, #1173B3 -34.01%, #0CB9B3 69.91%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-now:hover {
+  background: linear-gradient(93.31deg, #0CB9B3 -34.01%, #1173B3 69.91%);
+}
+
+.find-now .find-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}

@@ -1,0 +1,160 @@
+/* Main Navbar Container */
+.navbar-container {
+    position: absolute;
+    width: 100%; /* Adjust width to 100% to fill the entire width */
+    height: 92px;
+    left: 0; /* Remove left and transform properties */
+    top: 0;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px; /* Keep padding for inner spacing */
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box {
+  width: 40.55px;
+  height: 40.55px;
+  background: linear-gradient(138.01deg, #D86D6B 4.06%, #F5854E 22.9%, #F0C971 37.65%, #3CC6C1 56.3%, #419E80 69.14%, #4188C1 86.38%); /* Gradient background */
+  box-shadow: 0px 3.45px 25.88px rgba(0, 0, 0, 0.09);
+  border-radius: 6.9px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.8px;
+  line-height: 29px;
+  letter-spacing: -0.075em;
+  color: #000000;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 106px;
+  padding: 8px 16px;
+}
+
+.nav-item {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  color: #707070;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Dropdown Menu */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 48px; /* Position below the "Login / Signup" button */
+  right: 0;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 200;
+  min-width: 200px;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+
+.dropdown-item:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-link {
+  margin-left: 16px;
+  color: #F26722;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown-link:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  width: 19px;
+  height: 0;
+  border: 1px solid #D0D0D0;
+  transform: rotate(90deg);
+}
+
+/* Provider Login Section */
+.provider-login {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 19px;
+  background: #F26722;
+  border-radius: 16px;
+  height: 52px;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.arrow-down {
+  width: 10px;
+  height: 6px;
+  background: #707070;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+/* Hover & Transition Effects */
+.nav-item:hover {
+  color: #F26722;
+}
+
+.nav-item .arrow-down {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-container:hover .arrow-down {
+  transform: rotate(180deg); /* Rotates the arrow on hover */
+}
+
+.dropdown-menu:hover {
+  display: block; /* Ensures dropdown stays open when hovered */
+}
+
